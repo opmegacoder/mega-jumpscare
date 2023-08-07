@@ -13,13 +13,11 @@ void pizdec()
 
 }
 
-int randomizator(int *udacha)
+void randomizator(int *udacha)
 {
 	srand(time(NULL));
 
 	*udacha = rand() % 2 + 1;
-
-	return 0;
 }
 
 void main()
@@ -30,13 +28,13 @@ void main()
 
 	int bebra = 0;
 
-	Sleep(5000);
+	Sleep(2000);
 
 	printf("чтож начем...\n");
 	
 	randomizator(&bebra);
 
-	cout << bebra << endl;
+	printf("%d",bebra);
 
 	if (bebra == 1 )
 	{
